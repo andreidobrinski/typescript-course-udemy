@@ -3,3 +3,9 @@ Typescript
 - uses 'type annotations' to analyze code
 - only relevant during development
 - no perf benefits
+
+Type annotation
+- explicitly telling TS what type of value a variable is
+
+Type inference
+- TS tries to figure out what type of value a variable is
