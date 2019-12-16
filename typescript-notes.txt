@@ -1,0 +1,5 @@
+Typescript
+- helps catch errors during development
+- uses 'type annotations' to analyze code
+- only relevant during development
+- no perf benefits
