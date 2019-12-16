@@ -3,9 +3,28 @@ Typescript
 - uses 'type annotations' to analyze code
 - only relevant during development
 - no perf benefits
+- help to self-document the code
 
 Type annotation
 - explicitly telling TS what type of value a variable is
+const apples: number = 5;
+const speed: string = 'fast';
+const hasName: boolean = true;
+const nothingMuch: null = null;
+const nothing: undefined = undefined;
+const now: Date = new Date();
+// Type of array that contains strings
+const colors: string[] = ['red', 'green', 'blue'];
+const numbers: number[] = [1,2,3];
+const truths: boolean[] = [true, true, false];
+// classes
+class Car {}
+const car: Car = new Car();
+// object literal
+const point: { x: number; y: number } = { x: 10, y: 20 };
+// function
+const logNumber: (i: number) => void = (i) => { console.log(i) };
+// None of the above annotations are necessary b/c they get inferred
 
 Type inference
 - TS tries to figure out what type of value a variable is
