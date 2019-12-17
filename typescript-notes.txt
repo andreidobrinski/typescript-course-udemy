@@ -41,6 +41,16 @@ for (let i = 0; i < words.length; i++) {
   }
 }
 
+3. type cannot be inferred
+let numbers = [-10, -1, 12];
+let numberAboveZero: boolean | number = false;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    numberAboveZero = numbers[i];
+  }
+}
+
 Type inference
 - TS tries to figure out what type of value a variable is
 - only works when declaration and initialization are on the same line:
