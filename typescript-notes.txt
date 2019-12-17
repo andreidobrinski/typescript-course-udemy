@@ -132,3 +132,14 @@ const myCar = carMakers.pop();
 const dates = [new Date(), 'june 3rd'];
 // or annotated
 const dates: (Date | string)[] = [];
+
+Tuples
+- arrays where order matters
+// for eg:
+const drink = {
+  color: 'brown',
+  carbonated: true,
+  sugar: 40
+}
+// can also be
+[brown, true, 40]
