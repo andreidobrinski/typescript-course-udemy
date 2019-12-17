@@ -26,6 +26,10 @@ const point: { x: number; y: number } = { x: 10, y: 20 };
 const logNumber: (i: number) => void = (i) => { console.log(i) };
 // None of the above annotations are necessary b/c they get inferred
 
+- 'any' type: means TS doesn't know what type it is
+const json = '{"x": 10, "y": 20}';
+const coordinates: { x: number; y: number } = JSON.parse(json);
+
 Type inference
 - TS tries to figure out what type of value a variable is
 - only works when declaration and initialization are on the same line:
