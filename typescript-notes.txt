@@ -65,3 +65,6 @@ const add = (a: number, b: number): number => {
 
 Type inference for functions
 - TS tries to figure out what type of value a function will return
+- type inference happens on function returns but not on function args
+- returns are good to annotate
+-- if you forget to annotate the returns and forget to return, TS will infer void as the return type
