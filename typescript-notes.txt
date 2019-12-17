@@ -55,3 +55,13 @@ Type inference
 - TS tries to figure out what type of value a variable is
 - only works when declaration and initialization are on the same line:
 // const apples: number = 5;
+
+Type annotations for function
+- code we add to tell TS what type of args a function will receive and what type of values it will return
+// annotates a and b as a number and the return as a number
+const add = (a: number, b: number): number => {
+  return a + b;
+};
+
+Type inference for functions
+- TS tries to figure out what type of value a function will return
