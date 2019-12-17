@@ -110,3 +110,25 @@ Type inference for functions
 - type inference happens on function returns but not on function args
 - returns are good to annotate
 -- if you forget to annotate the returns and forget to return, TS will infer void as the return type
+
+Arrays
+// inferred as an array of strings
+const carMakers = ['ford', 'toyota', 'chevy'];
+// annotated
+const carMakers: string[] = ['ford', 'toyota', 'chevy'];
+// inferred as an array of any
+// should be annotated if array contents are known
+const carMakers = [];
+// nested arrays
+const carsByMake: string[][] = [
+  ['f150'],
+  ['corolla'],
+  ['camaro']
+];
+// TS infers the type
+// works also with push, map, reduce etc.
+const myCar = carMakers.pop();
+// flexible types can be inferred
+const dates = [new Date(), 'june 3rd'];
+// or annotated
+const dates: (Date | string)[] = [];
