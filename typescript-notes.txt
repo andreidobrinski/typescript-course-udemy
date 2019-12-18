@@ -148,3 +148,4 @@ const pepsi: [string, boolean, number] = ['brown', true, 40];
 // or annotate as a type
 type Drink = ['brown', true, 40];
 const pepsi: Drink = ['brown', true, 40];
+// using objects is more clear than using tuples
