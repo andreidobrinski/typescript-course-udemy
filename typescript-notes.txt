@@ -190,3 +190,4 @@ const oldCivic = {
     return `Name is ${this.name}`;
   }
 };
+// interfaces are useful for reusing types
