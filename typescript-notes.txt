@@ -195,11 +195,7 @@ const oldCivic = {
 Classes
 // blueprint to create an object with fields (values) and methods (functions) to represent something
 class Vehicle {
-  color: string;
-
-  constructor(color: string) {
-    this.color = color;
-  }
+  constructor(public color: string) {}
 
   protected drive(): void {
     console.log('drive');
