@@ -234,3 +234,5 @@ Class modifiers
 
 // this wont work if drive() is private b/c it can only be called within the class
 car.drive(); 
+
+TS does not use default exports by convention
