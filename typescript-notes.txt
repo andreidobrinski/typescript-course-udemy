@@ -191,3 +191,42 @@ const oldCivic = {
   }
 };
 // interfaces are useful for reusing types
+
+Classes
+// blueprint to create an object with fields (values) and methods (functions) to represent something
+class Vehicle {
+  color: string = 'red;
+
+  protected drive(): void {
+    console.log('drive');
+  }
+  honk(): void {
+    console.log('beep');
+  }
+}
+
+const vehicle = new Vehicle();
+vehicle.drive();
+// 'drive'
+console.log(vehicle.color);
+// 'red'
+
+class Car extends Vehicle {
+  drive(): void {
+    console.log('vroom');
+  }
+}
+
+const car = new Car();
+car.drive();
+// 'vroom'
+
+Class modifiers
+- public: this method can be called anywhere anytime (is the default)
+- private: can only be called by other methods in this class
+- protected: can be called by other methods in this class, or by other methods in child classes
+
+// a child method cannot change the modifier of the parent method
+
+// this wont work if drive() is private b/c it can only be called within the class
+car.drive(); 
