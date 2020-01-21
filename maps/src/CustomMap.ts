@@ -1,5 +1,9 @@
-import { User } from './User';
-import { Company } from './Company';
+interface Mappable {
+  location: {
+    lat: number;
+    lng: number;
+  }
+}
 
 export class CustomMap {
   private googleMap: google.maps.Map;
@@ -14,8 +18,7 @@ export class CustomMap {
     });
   }
 
-  // with the | operator, TS will use only the properties that both classes have
-  addMarker(mappable: User | Company): void {
+  addMarker(mappable: Mappable): void {
     new google.maps.Marker({
       map: this.googleMap,
       position: {
