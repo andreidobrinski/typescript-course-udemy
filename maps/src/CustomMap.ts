@@ -14,22 +14,13 @@ export class CustomMap {
     });
   }
 
-  addUserMarker(user: User): void {
+  // with the | operator, TS will use only the properties that both classes have
+  addMarker(mappable: User | Company): void {
     new google.maps.Marker({
       map: this.googleMap,
       position: {
-        lat: user.location.lat,
-        lng: user.location.lng
-      }
-    });
-  }
-
-  addCompanyMarker(company: Company): void {
-    new google.maps.Marker({
-      map: this.googleMap,
-      position: {
-        lat: company.location.lat,
-        lng: company.location.lng
+        lat: mappable.location.lat,
+        lng: mappable.location.lng
       }
     });
   }
