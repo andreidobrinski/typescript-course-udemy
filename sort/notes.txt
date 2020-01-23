@@ -1,0 +1,9 @@
+- run "tsc --init" to start a .tsconfig file
+- specify paths for outDir and rootDir
+- run "tsc -w" to auto-compile changes to the src folder
+- open a package.json with "npm init -y"
+- install "npm install nodemon concurrently"
+add scripts :
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
