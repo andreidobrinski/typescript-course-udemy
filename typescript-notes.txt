@@ -236,3 +236,13 @@ Class modifiers
 car.drive(); 
 
 TS does not use default exports by convention
+
+Interfaces vs Abstract Classes
+Interfaces
+- sets up a contract between classes
+- lets different objects work together
+- promotes loose coupling
+Abstract Classes (Inheritance)
+- contract between classes
+- use to build up a definition of an object
+- strongly couples classes together
