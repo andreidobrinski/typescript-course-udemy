@@ -250,3 +250,7 @@ Abstract Classes (Inheritance)
 Enums
 - used to document a set of constants
 - used for smaller lists
+
+Generics
+- like function arguments but for types in classes/functions
+- lets us define a return value at a future point
