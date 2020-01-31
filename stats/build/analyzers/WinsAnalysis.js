@@ -16,7 +16,7 @@ var WinsAnalysis = /** @class */ (function () {
                 wins++;
             }
         }
-        return "Team " + this.team + " win " + wins + " games";
+        return "Team " + this.team + " won " + wins + " games";
     };
     return WinsAnalysis;
 }());
