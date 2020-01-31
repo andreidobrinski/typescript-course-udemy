@@ -246,3 +246,7 @@ Abstract Classes (Inheritance)
 - contract between classes
 - use to build up a definition of an object
 - strongly couples classes together
+
+Enums
+- used to document a set of constants
+- used for smaller lists
