@@ -262,6 +262,7 @@ Decorators
 - third argument is the property descriptor
 - applied only once when class is defined
 - syntactic sugar for the prototype
+- cannot read properties on classes
 
 Property Descriptor for Methods
 - Writable: can the property be changed?
