@@ -262,3 +262,9 @@ Decorators
 - third argument is the property descriptor
 - applied only once when class is defined
 - syntactic sugar for the prototype
+
+Property Descriptor for Methods
+- Writable: can the property be changed?
+- Enumerable: can it be looped over?
+- Value: current value
+- Configurable: can the definition be changed and property deleted?
