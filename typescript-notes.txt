@@ -268,3 +268,7 @@ Property Descriptor for Methods
 - Enumerable: can it be looped over?
 - Value: current value
 - Configurable: can the definition be changed and property deleted?
+
+Decorator factory
+- a function that returns another function
+- why? to be able to pass args to a decorator
