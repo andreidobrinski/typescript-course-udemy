@@ -254,3 +254,11 @@ Enums
 Generics
 - like function arguments but for types in classes/functions
 - lets us define a return value at a future point
+
+Decorators
+- add @decoratorName above a function
+- first argument is the prototype of the object
+- second argument is the key on the object (function name for eg.)
+- third argument is the property descriptor
+- applied only once when class is defined
+- syntactic sugar for the prototype
