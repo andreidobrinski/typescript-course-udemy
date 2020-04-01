@@ -8,7 +8,7 @@ interface AppProps {
   fetchTodo(): any;
 }
 
-export class App extends React.Component<AppProps> {
+class _App extends React.Component<AppProps> {
   render() {
     return <div>hello</div>;
   }
@@ -17,3 +17,8 @@ export class App extends React.Component<AppProps> {
 const mapStateToProps = ({ todos }: StoreState): { todos: Todo[] } => {
   return { todos };
 };
+
+export const App = connect(
+  mapStateToProps,
+  { fetchTodos }
+)(_App);
