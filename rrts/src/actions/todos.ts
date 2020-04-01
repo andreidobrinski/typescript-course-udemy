@@ -1,6 +1,6 @@
-import axios from "axios";
-import { Dispatch } from "redux";
-import { ActionTypes } from "./types";
+import axios from 'axios';
+import { Dispatch } from 'redux';
+import { ActionTypes } from './types';
 
 export interface Todo {
   id: number;
